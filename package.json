@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rolldown -c"
+    "build": "rolldown -c",
+    "test": "node -v && node -e \"const { v4 } = require('./dist/index.js'); console.log(typeof v4); v4();\""
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "24.13.0"
+  },
   "devDependencies": {
-    "rolldown": "1.0.0-rc.16"
+    "rolldown": "1.0.0-rc.18"
   }
 }
