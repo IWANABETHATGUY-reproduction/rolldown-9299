@@ -2,11 +2,10 @@
   "name": "9299",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "rolldown -c",
-    "test": "node -v && node -e \"const { v4 } = require('./dist/index.js'); console.log(typeof v4); v4();\""
-
+    "test": "node -v && node -e \"const { v4 } = require('./dist/index.cjs'); console.log(typeof v4); v4();\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +14,6 @@
     "node": "24.13.0"
   },
   "devDependencies": {
-    "rolldown": "1.0.0-rc.18"
+    "rolldown": "1.0.0-rc.16"
   }
 }
